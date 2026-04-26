@@ -81,6 +81,6 @@ async def process_media(request: MediaRequest):
                 print(f"Error limpiando archivo de Gemini: {e}")
 
 # Endpoint de prueba para saber si el servidor está vivo
-@app.get("/")
+@app.api_route("/", methods=["GET", "HEAD"])
 def read_root():
     return {"status": "Motor de IA en línea y operativo."}
