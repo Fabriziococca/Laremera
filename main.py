@@ -17,7 +17,7 @@ else:
     genai.configure(api_key=GEMINI_API_KEY)
 
 # Utilizamos gemini-flash-latest por defecto para máxima velocidad y capacidad multimodal
-model = genai.GenerativeModel('gemini-1.5-flash-latest')
+model = genai.GenerativeModel('gemini-flash-latest')
 
 # Definimos la estructura del JSON que Make nos va a enviar
 class MediaRequest(BaseModel):
